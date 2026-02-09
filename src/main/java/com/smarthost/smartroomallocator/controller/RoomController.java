@@ -22,7 +22,6 @@ public class RoomController {
 
     @PostMapping(OCCUPANCY_REQUEST_URI)
     public OccupancyResponse allocateRooms(@RequestBody OccupancyRequest request) {
-
-        return null;
+        return roomAllocatorService.allocateRooms(request);
     }
 }

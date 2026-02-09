@@ -1,14 +1,16 @@
 package com.smarthost.smartroomallocator.model;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.math.BigInteger;
-
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
 public class OccupancyResponse {
 
-    private BigInteger usagePremium;
+    private Long usagePremium;
     private Double revenuePremium;
-    private BigInteger usageEconomy;
+    private Long usageEconomy;
     private Double revenueEconomy;
 }
